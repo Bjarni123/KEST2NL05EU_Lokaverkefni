@@ -9,7 +9,10 @@ Lab Instructions:
    ![alt text](screenshots/serverSS/hostname.png)  ![alt text](screenshots/clientSS/client_hostname.png)
    ![alt text](screenshots/serverSS/hosts.png)  ![alt text](screenshots/clientSS/client1_hosts.png)
 
-2. configure server1 with static IP Address, from the IP Address block 192.168.100.0/24. The server must be configured with the 10th usable IP Address.
+   ![alt text](screenshots/clientSS/client1_hosts.png)
+   ![alt text](screenshots/clientSS/client_hostname.png)
+
+3. configure server1 with static IP Address, from the IP Address block 192.168.100.0/24. The server must be configured with the 10th usable IP Address.
 
   ![alt text](screenshots/serverSS/01-network-manager-all.yaml.png)
   ![alt text](screenshots/serverSS/01-network-manager-all.yaml.png)
@@ -18,18 +21,18 @@ Lab Instructions:
 
   ![alt text](screenshots/serverSS/dhcpd.conf.png)  
    
-7. Install and configure DNS server on server1, so Hostnames are resolved to IP Addresses.
+4. Install and configure DNS server on server1, so Hostnames are resolved to IP Addresses.
 
   ![alt text](screenshots/serverSS/ddp.is.db.png) 
   ![alt text](screenshots/serverSS/named.conf.local.png)
   ![alt text](screenshots/serverSS/r.server.ddp.is.db.png)
   ![alt text](screenshots/serverSS/server1.ddp.is.db.png)
    
-9. Create the users accounts using a script, see the Users file.
+5. Create the users accounts using a script, see the Users file.
 
   ![alt text](screenshots/serverSS/create_users.sh.png)
     
-11. Install and configure MySQL on server1 and create Human Resource database. The
+6. Install and configure MySQL on server1 and create Human Resource database. The
   database stores information about employees, employees are identified by their Kennitala,
   Firstname, Lastname, Email, phone Number, hire date and salary. Employees work in
   Departments where each department has one manager, departments are identified by
@@ -41,23 +44,27 @@ Lab Instructions:
    ![alt text](screenshots/serverSS/TableEmployees.png)
    ![alt text](screenshots/serverSS/TableLocations.png)
 
-13. Due to data loss the company policy requires taking backups weekly, as system engineer you are required to schedule backups of home directories to run weekly at midnight each Friday.
+7. Due to data loss the company policy requires taking backups weekly, as system engineer you are required to schedule backups of home directories to run weekly at midnight each Friday.
 
    ![alt text](screenshots/serverSS/backupScript.sh.png)
    ![alt text](screenshots/serverSS/crontab.png)
 
-14. Install and configure NTP on the server and clients, server1 must be master server to synchronize the time of the clients.
+8. Install and configure NTP on the server and clients, server1 must be master server to synchronize the time of the clients.
 
    ![alt text](screenshots/serverSS/ntp.conf.png)
    ![alt text](screenshots/serverSS/ntpq_-p.png)
 
-16. Install and configure syslog server on server1, server1 should get logs from both the clients for proactive management and monitoring.
+   ![alt text](screenshots/clientSS/client1_ntp.conf.png)
+
+10. Install and configure syslog server on server1, server1 should get logs from both the clients for proactive management and monitoring.
 
    ![alt text](screenshots/serverSS/rsyslog.con_part1.png)
    ![alt text](screenshots/serverSS/rsyslog.con_part2.png)
    ![alt text](screenshots/serverSS/syslogOutput.png)
+
+   ![alt text](screenshots/clientSS/client1_rsyslog.conf.png)
     
-18. Install and configure Postfix on server1, so users can send and receive emails using Round Cube open-source software.
-19. Install and configure shared printers for each group, only users that belong to the group should print only, accept IT and Management groups should print and manage the printers.
-20. For security reasons, install and configure SSH on the server and clients, SSH login should use RSA keys instead of the password authentication.
-21. All unused ports should be closed, use NMAP for testing.
+11. Install and configure Postfix on server1, so users can send and receive emails using Round Cube open-source software.
+12. Install and configure shared printers for each group, only users that belong to the group should print only, accept IT and Management groups should print and manage the printers.
+13. For security reasons, install and configure SSH on the server and clients, SSH login should use RSA keys instead of the password authentication.
+14. All unused ports should be closed, use NMAP for testing.
