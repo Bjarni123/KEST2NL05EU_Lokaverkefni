@@ -65,6 +65,17 @@ Lab Instructions:
    ![alt text](screenshots/clientSS/client1_rsyslog.conf.png)
     
 11. Install and configure Postfix on server1, so users can send and receive emails using Round Cube open-source software.
+
+   Gerði ekki þetta
+
 12. Install and configure shared printers for each group, only users that belong to the group should print only, accept IT and Management groups should print and manage the printers.
+
+   Gerði ekki þetta
+
 13. For security reasons, install and configure SSH on the server and clients, SSH login should use RSA keys instead of the password authentication.
+
+   Gerði ekki þetta
+
 14. All unused ports should be closed, use NMAP for testing.
+
+   Gerði ekki þetta
