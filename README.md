@@ -1,6 +1,6 @@
 # Lokaverkefni
 ---
-Það var vandamál með að setja upp CentOS client2. Ég reyndi að laga það en náði því ekki. Abdel sagði mér að nota bara 2 Ubuntu client-a. Setti bara skjáskot af client1 því skjáskotin eru þau sömu á báðum vélum og ég komst ekki nógu langt til þess að setja upp Postfix og fleirra þar sem Clients eru að tala við hvort annað.
+#### Það var vandamál með að setja upp CentOS client2. Ég reyndi að laga það en náði því ekki. Abdel sagði mér að nota bara 2 Ubuntu client-a. Setti bara skjáskot af client1 því skjáskotin eru þau sömu á báðum vélum og ég komst ekki nógu langt til þess að setja upp Postfix og fleirra þar sem Clients eru að tala við hvort annað.
 ---
 As Linus Engineer working with DDP ehf company, you are required to install and configure a new Linux server (server1) for centralized proactive management and access. Two Linux clients, client1 running Debian distro, and client2 running RedHat distribution. DDP has 30 employees that work in four different departments as shown in the Users file.
 
